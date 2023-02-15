@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">marat_uulu_daniyar_3of3month</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="films_list">Films list</string>
+    <string name="games_list">Games List</string>
+    <string name="philosopher">Philosopher</string>
+    <string name="game">GAME</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:name="com.kg.marat_uulu_daniyar_3of3month.FilmList.FilmsListFragment"
+        tools:layout="@layout/fragment_films_list"
+        android:id="@+id/main_container"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:weightSum="3"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/films_list"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:id="@+id/btn_filmList"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAllCaps="false"
+            android:text="Philosophers List"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="8dp"
+            android:id="@+id/btn_philList"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAllCaps="false"
+            android:text="@string/games_list"
+            android:layout_weight="1"
+            android:id="@+id/btn_gamesList"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
